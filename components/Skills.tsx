@@ -5,12 +5,14 @@ import { LayoutGroup } from 'framer-motion'
 
 import iconReactjs from '../assets/icons/react.png'
 import iconVuejs from '../assets/icons/vue.png'
-import iconNextjs from '../assets/icons/nextjs.png'
-import iconNuxtjs from '../assets/icons/nuxtjs.svg'
-import iconTailwind from '../assets/icons/tailwind.png'
-import iconBootstrap from '../assets/icons/bootstrap.png'
-import iconNodejs from '../assets/icons/nodejs.png'
-import iconGithub from '../assets/icons/github.png'
+import iconJQuery from '../assets/icons/jquery.png'
+import iconGit from '../assets/icons/git.png'
+import iconHTML from '../assets/icons/html.png'
+import iconCSS from '../assets/icons/css.png'
+import iconJavascript from '../assets/icons/javascript.png'
+import iconTypescript from '../assets/icons/typescript.svg'
+import iconGolang from '../assets/icons/golang.png'
+import iconFlutter from '../assets/icons/flutter.png'
 
 type Props = {}
 
@@ -18,57 +20,71 @@ function Skills({}: Props) {
   const skills = [
     {
       id: 1,
-      name: 'ReactJS',
-      iconUrl: iconReactjs,
-      proficiency: '85%',
+      name: 'HTML',
+      iconUrl: iconHTML,
+      proficiency: '90%',
       directionLeft: true,
     },
     {
       id: 2,
-      name: 'VueJS',
-      iconUrl: iconVuejs,
+      name: 'CSS',
+      iconUrl: iconCSS,
       proficiency: '90%',
       directionLeft: true,
     },
     {
       id: 3,
-      name: 'Next.js',
-      iconUrl: iconNextjs,
-      proficiency: '70%',
-      directionLeft: true,
-    },
-    {
-      id: 4,
-      name: 'Nuxt.js',
-      iconUrl: iconNuxtjs,
+      name: 'Javascript',
+      iconUrl: iconJavascript,
       proficiency: '90%',
       directionLeft: true,
     },
     {
+      id: 4,
+      name: 'Typescript',
+      iconUrl: iconTypescript,
+      proficiency: '80%',
+      directionLeft: true,
+    },
+    {
       id: 5,
-      name: 'Tailwind CSS',
-      iconUrl: iconTailwind,
-      proficiency: '100%',
-      directionLeft: false,
+      name: 'Golang',
+      iconUrl: iconGolang,
+      proficiency: '70%',
+      directionLeft: true,
     },
     {
       id: 6,
-      name: 'Bootstrap CSS',
-      iconUrl: iconBootstrap,
-      proficiency: '100%',
+      name: 'React.js',
+      iconUrl: iconReactjs,
+      proficiency: '90%',
       directionLeft: false,
     },
     {
       id: 7,
-      name: 'Node.js',
-      iconUrl: iconNodejs,
+      name: 'Vue.js',
+      iconUrl: iconVuejs,
       proficiency: '90%',
       directionLeft: false,
     },
     {
       id: 8,
-      name: 'Github',
-      iconUrl: iconGithub,
+      name: 'jQuery',
+      iconUrl: iconJQuery,
+      proficiency: '75%',
+      directionLeft: false,
+    },
+    {
+      id: 9,
+      name: 'Flutter',
+      iconUrl: iconFlutter,
+      proficiency: '70%',
+      directionLeft: false,
+    },
+    {
+      id: 8,
+      name: 'Git',
+      iconUrl: iconGit,
       proficiency: '85%',
       directionLeft: false,
     },
@@ -81,7 +97,7 @@ function Skills({}: Props) {
         currency proficiency
       </h3>
 
-      <div className="mt-8 md:grid md:grid-cols-4 md:gap-5">
+      <div className="mt-8 md:grid md:grid-cols-5 md:gap-5">
         <LayoutGroup>
           {skills.map((skill) => (
             <Skill key={skill.id} skill={skill} />

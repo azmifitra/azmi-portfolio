@@ -25,12 +25,12 @@ function Skill({ skill }: Props) {
       >
         <Image
           src={skill.iconUrl}
-          className="inline-block h-16 w-16 rounded-full object-cover filter transition duration-300 ease-in-out group-hover:grayscale md:h-28 md:w-28 xl:h-32 xl:w-32"
+          className="inline-block h-16 w-16 rounded-md object-cover filter transition duration-300 ease-in-out group-hover:grayscale md:h-28 md:w-28 xl:h-32 xl:w-32"
           alt={`icon-${skill.name}`}
         />
       </motion.div>
       <div
-        className="absolute z-0 h-16 w-16 rounded-full opacity-0 transition duration-300 ease-in-out group-hover:bg-white group-hover:opacity-80 md:h-28 md:w-28 xl:h-32 xl:w-32"
+        className="absolute z-0 h-16 w-16 rounded-md opacity-0 transition duration-300 ease-in-out group-hover:bg-white group-hover:opacity-80 md:h-28 md:w-28 xl:h-32 xl:w-32"
         title={skill.name}
       >
         <div className="flex h-full items-center justify-center">
