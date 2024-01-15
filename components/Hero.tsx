@@ -19,7 +19,7 @@ function Hero({}: Props) {
       <BackgroundCircles />
       <Image src={avatarPic} alt="azmi-avatar" className="relative mx-auto h-32 w-32 rounded-full object-cover" />
       <div className="z-20">
-        <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">Frontend Developer</h2>
+        <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">Fullstack Developer</h2>
         <h1 className="px-10 text-3xl font-semibold lg:text-5xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#047857" />

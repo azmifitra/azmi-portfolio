@@ -23,6 +23,14 @@ html {
     @apply relative flex flex-col items-center overflow-auto rounded-lg bg-white shadow-md;
     max-height: 95%;
   }
+
+  .tooltip {
+    @apply invisible absolute;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply visible z-50;
+  }
 }
 
 input:-webkit-autofill {
