@@ -46,13 +46,8 @@ const ExperienceCard = (props: experienceProps) => {
         <p className="mt-1 text-xl font-bold md:text-2xl">{props.experience.company}</p>
         <div className="my-2 flex space-x-2">
           {props.experience.techStacks.map((item) => (
-            <div className="group relative">
-              <img
-                key={item.id}
-                className="h-8 w-8 cursor-pointer rounded-full"
-                src={item.iconUrl}
-                alt={`icon-${item.title}`}
-              />
+            <div className="group relative" key={item.id}>
+              <img className="h-8 w-8 cursor-pointer rounded-full" src={item.iconUrl} alt={`icon-${item.title}`} />
               <div className="invisible absolute top-9 z-50 rounded border-2 border-[#047857]/50 bg-[rgb(36,36,36)] p-1 text-white shadow-lg group-hover:visible">
                 {item.title}
               </div>
