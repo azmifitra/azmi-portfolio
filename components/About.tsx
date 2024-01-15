@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-import imageAboutPic from '../assets/images/azmi-cover.jpg'
+import imageAboutPic from '../assets/images/azmi-solo-4.jpg'
 
 type Props = {}
 
