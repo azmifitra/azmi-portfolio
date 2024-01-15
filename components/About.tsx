@@ -49,10 +49,9 @@ function About({}: Props) {
             Here is my <span className="underline decoration-[#047857]">little</span> background
           </h4>
           <p className="text-base">
-            Currently working as a Frontend developer who have a passion for creating visually stunning and
-            user-friendly websites and applications. My goal is to create visually appealing and seamless user
-            experiences that will make the website or application stand out from the rest. Also, always looking for new
-            ways to improve the user experience and stay up-to-date with the latest frontend technologies.
+            A proficient full-stack developer with two years of hands-on experience in designing and implementing
+            innovative and efficient web solutions. Proficient in both front-end and back-end technologies, skilled at
+            creating seamless user experiences and scalable applications.
           </p>
         </div>
       </div>
